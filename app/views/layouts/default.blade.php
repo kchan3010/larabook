@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
-<div class="container">
-    @yield('content')
-</div>
+    @include('layouts.partials.nav')
 
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <div class="container">
+        @yield('content')
+    </div>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 </body>
 </html>
